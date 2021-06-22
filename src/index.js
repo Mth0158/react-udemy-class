@@ -6,14 +6,15 @@ if (module.hot) {
 }
 
 const App = () => {
+  const insertMe = "Click me!";
   return (
     <div>
-      <label class="label" for="name">
+      <label className="label" htmlFor="name">
         Enter name:
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "blue", color: "white" }}>
-        Submit
+        {insertMe}
       </button>
     </div>
   );
